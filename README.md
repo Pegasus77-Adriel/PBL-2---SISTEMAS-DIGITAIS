@@ -42,7 +42,7 @@ A estrutura de frames da UART consiste em um bit inicial, um bit final, um bit d
 Os pinos utilizados na conexão da UART na Raspberry Pi Zero W são os GPIO 15 (TXD) para o transmissor e GPIO16 (RXD) para o receptor, enquanto os pinos na NodeMCU são os GPIO 1 (TXD 0) para o transmissor e GPIO 3 (RXD 0) para o receptor. Para que a comunicação seja possível, o transmissor de uma placa é ligado no receptor de outra e vice-versa.
 
 ### Controlando a Raspberry
-O arquivo [main.c](https://github.com/Diego10Rocha/sistemas-digitais/blob/main/main.c) é responsável por controlar a comunicação UART no Raspberry Pi Zero W, sendo responsável por iniciar a comunicação,  possuindo também métodos para enviar e receber dados via UART. Também é responsável por apresentar os dados para o usuário, assim como interfaciar a comunicação, exibindo os valores solicitados no terminal e no display LCD.
+O arquivo [main.c](https://github.com/Pegasus77-Adriel/PBL-2---SISTEMAS-DIGITAIS/tree/main/main.c) é responsável por controlar a comunicação UART no Raspberry Pi Zero W, sendo responsável por iniciar a comunicação,  possuindo também métodos para enviar e receber dados via UART. Também é responsável por apresentar os dados para o usuário, assim como interfaciar a comunicação, exibindo os valores solicitados no terminal e no display LCD.
 
 Esse arquivo utiliza a biblioteca Termios (ver Materiais de Referência) que define a interface de E/S da placa, trabalhando com arquivos do sistema operacional para efetuar a comunicação UART pelos pinos Tx e Rx. A seguir estão descritas as funções presentes no arquivo:
 - *wryte_bytes()*: transmite dados via comunicação UART;
@@ -53,7 +53,7 @@ Esse arquivo utiliza a biblioteca Termios (ver Materiais de Referência) que def
 - *delay()*: gera um atraso na execução do código;
 - *write_str()*: escreve caracteres no display LCD.
 
-Os arquivos [map.s](https://github.com/Pegasus77-Adriel/PBL-2---SISTEMAS-DIGITAIS/tree/main/map.s), [lcdInit.s](https://github.com/Pegasus77-Adriel/PBL-2---SISTEMAS-DIGITAIS/tree/main/lcdInit.s), [lcdWrite.s](https://github.com/Pegasus77-Adriel/PBL-2---SISTEMAS-DIGITAIS/tree/main/lcdWrite.s) e [clear.s](https://github.com/Pegasus77-Adriel/PBL-2---SISTEMAS-DIGITAIS/tree/main/clear.s) são escritos em Assembly ARMv6 e são responsáveis por fazer o mapeamento dos pinos do display e controlar as funções básicas do mesmo, como escrever e limpar o display.
+Os arquivos [map.s](https://github.com/Pegasus77-Adriel/PBL-2---SISTEMAS-DIGITAIS/tree/main/main.c), [lcdInit.s](https://github.com/Pegasus77-Adriel/PBL-2---SISTEMAS-DIGITAIS/tree/main/lcdInit.s), [lcdWrite.s](https://github.com/Pegasus77-Adriel/PBL-2---SISTEMAS-DIGITAIS/tree/main/lcdWrite.s) e [clear.s](https://github.com/Pegasus77-Adriel/PBL-2---SISTEMAS-DIGITAIS/tree/main/clear.s) são escritos em Assembly ARMv6 e são responsáveis por fazer o mapeamento dos pinos do display e controlar as funções básicas do mesmo, como escrever e limpar o display.
 
 ### Controlando a NodeMCU
 O arquivo [uart_node.ino](https://github.com/Pegasus77-Adriel/PBL-2---SISTEMAS-DIGITAIS/tree/main/uart_node.ino) é responsável por controlar a comunicação UART no NodeMCU, recebendo as solicitações da Raspberry e encaminhando as mensagens de resposta de acordo com a situação dos sensores analógico e digitais. O código presente nesse arquivo pode ser executado na plataforma Arduino IDE.
