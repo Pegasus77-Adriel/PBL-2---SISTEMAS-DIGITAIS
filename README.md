@@ -3,7 +3,7 @@
 Esse projeto implementa uma comunicação serial entre uma Raspberry Pi Zero W e um NodeMCU, sendo capaz de controlar o acionamento de um conjunto de sensores conectados ao NodeMCU, assim como monitorar o seu funcionamento.
 
 ## Desenvolvedor
-- [Adriel Santana Oliveira](github.com/Pegasus77-Adriel)
+- [Adriel Santana Oliveira](https://github.com/Pegasus77-Adriel)
 
 ## Descrição do problema
 Foi implementado o protocolo de comunicação UART entre um Single Board Computer (SBC) Raspberry Pi Zero W e a plataforma de IoT NodeMCU. O sistema é comandado pelo SBC, sendo capaz de controlar o acionamento de um conjunto de sensores analógico/digitais conectados ao NodeMCU, assim como monitorar o seu funcionamento.
