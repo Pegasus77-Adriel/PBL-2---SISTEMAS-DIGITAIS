@@ -91,21 +91,7 @@ O usuário pode controlar o led embutido no NodeMCU:
 ## Materiais de referência
 [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#raspberry-pi-zero-w)
 
-[Display LCD HD44780U](https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.sparkfun.com/datasheets/LCD/HD44780.pdf&ved=2ahUKEwjso46tlqn6AhVGL7kGHSe6BMEQFnoECGIQAQ&usg=AOvVaw076YT-P88DM3oFFvTDUv43)
-
-[BCM2835 ARM Peripherals](https://www.raspberrypi.org/app/uploads/2012/02/BCM2835-ARM-Peripherals.pdf)
-
 [ESP8266 Arduino Core Documentation](https://readthedocs.org/projects/arduino-esp8266/downloads/pdf/latest/)
-
-[Documentação de Referência da Linguagem Arduino](https://www.arduino.cc/reference/pt/)
-
-[ESP8266WiFi library](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html)
-
-[ESP8266mDNS library](https://www.arduino.cc/reference/en/libraries/esp8266_mdns/)
-
-[WifiUdp library](https://www.arduino.cc/reference/en/libraries/wifi/wifiudp/)
-
-[ArduinoOTA](https://www.arduino.cc/reference/en/libraries/arduinoota/)
 
 [SoftwareSerial Library](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjSluW4ypz7AhU_kZUCHbP9C5kQFnoECAoQAQ&url=https%3A%2F%2Fwww.arduino.cc%2Fen%2FReference%2FsoftwareSerial&usg=AOvVaw2kUbQNvvMDReS_1LIPB82g)
 
